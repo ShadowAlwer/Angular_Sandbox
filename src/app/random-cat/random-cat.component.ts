@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class RandomCatComponent {
 
+  public readonly API_ADDRESS: string = 'https://cataas.com/cat?a=';
+
   public loading = false;
   public random = 0;
 
