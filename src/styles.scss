@@ -1,11 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use './reset.scss';
-
-$ucla-blue: #3e78b2ff;
-$cobalt-blue: #004ba8ff;
-$outer-space: #4a525aff;
-$raisin-black: #24272bff;
-$black: #07070aff;
+@use './palette.scss' as *;
 
 html {
   height: 100%;
