@@ -10,6 +10,7 @@ export class BlankComponent implements OnInit {
     ngOnInit(): void {
         console.warn('Hello World')
         console.log("Hello Patryk")
+        console.log("Hello Alex")
     }
 
 }
