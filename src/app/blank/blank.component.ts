@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class BlankComponent implements OnInit {
 
     ngOnInit(): void {
-        console.warn('Hello world! ')
+        console.warn('Hello World')
+        console.log("Hello Patryk")
     }
 
 }
