@@ -18,3 +18,33 @@
 
 </body>
 </html>
+
+<!-- Zrobiłbym to tak:
+W .html wystarczy tylko:
+    <div>
+        <button onclick="doSomething()">Click it</button>
+        <p id="test">TEST</p>
+    </div>
+
+W .ts dopisz pod ngOnInit() {}:
+    doSomething() {
+        document.getElementById("test").innerHTML = "World";
+    }
+
+!!!!!!!!!
+To wszystko jest już zdefiniowane w pliku index.html i nie trzeba tego dodawać:
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World</title>
+    </head>
+    <body>
+        ...
+    </body>
+    </html>
+!!!!!!!!!
+
+W Angularze to co do wrzuciłeś do script wrzucamy do plików .ts żeby kod był odzielony od warstwy prezentacyjnej
+-->
