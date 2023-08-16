@@ -8,7 +8,7 @@
 <body>
     <button onclick="doSomething()">Click it</button>
     
-    <p id="test">TEST</p>
+<p id="test">TEST</p>
 
     <script>
         function doSomething(){
@@ -21,14 +21,15 @@
 
 <!-- Zrobiłbym to tak:
 W .html wystarczy tylko:
-    <div>
-        <button onclick="doSomething()">Click it</button>
-        <p id="test">TEST</p>
-    </div>
+
+    <button (click)="doSomething()">Click it</button>
+    <p id="test">TEST</p>
+
 
 W .ts dopisz pod ngOnInit() {}:
     doSomething() {
-        document.getElementById("test").innerHTML = "World";
+      const paragraph = document.getElementById("test") as HTMLElement;
+      paragraph.innerHTML = "World";
     }
 
 !!!!!!!!!
@@ -47,4 +48,5 @@ To wszystko jest już zdefiniowane w pliku index.html i nie trzeba tego dodawać
 !!!!!!!!!
 
 W Angularze to co do wrzuciłeś do script wrzucamy do plików .ts żeby kod był odzielony od warstwy prezentacyjnej
+Proponuje wzorować się na kodzie i przykładach używających Angulara, bo to co tutaj pisałeś działałoby gdyby to był projekt bez Angulara 
 -->
