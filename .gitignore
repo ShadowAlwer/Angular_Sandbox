@@ -6,6 +6,8 @@
 /out-tsc
 /bazel-out
 
+secret.json
+
 # Node
 /node_modules
 npm-debug.log
