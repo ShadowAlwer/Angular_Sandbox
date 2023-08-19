@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { count } from 'rxjs';
 
 @Component({
   selector: 'app-blank',
@@ -8,5 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class BlankComponent implements OnInit {
 
     ngOnInit(): void {}
+    doSomething() {
+      const paragraph = document.getElementById("test") as HTMLElement;
+      paragraph.innerHTML = "WORLD";
+    }
 
+    count=0;
+    counter(type:string)
+    {
+      type==='add'?this.count++:this.count--
+    }
 }

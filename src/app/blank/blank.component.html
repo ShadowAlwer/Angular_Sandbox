@@ -6,18 +6,15 @@
     <title>World</title>
 </head>
 <body>
-    <button onclick="doSomething()">Click it</button>
-    
-<p id="test">TEST</p>
-
-    <script>
-        function doSomething(){
-          document.getElementById("test").innerHTML = "World";
-        }
-    </script>
+    <button (click)="doSomething()">Click it</button>
+    <p id="test">TEST</p>
 
 </body>
 </html>
+
+<button (click)="counter('minus')">-</button>
+<p>COUNT: {{count}}</p>
+<button (click)="counter('add')">+</button>
 
 <!-- Zrobiłbym to tak:
 W .html wystarczy tylko:
