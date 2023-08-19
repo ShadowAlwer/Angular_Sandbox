@@ -5,18 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RandomCatComponent } from './random-cat/random-cat.component';
 import { BlankComponent } from './blank/blank.component';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { ChampionsComponent } from './champions/champions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RandomCatComponent,
-    BlankComponent
+    BlankComponent,
+    ChampionsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
