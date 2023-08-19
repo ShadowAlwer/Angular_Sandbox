@@ -6,7 +6,7 @@
 /out-tsc
 /bazel-out
 
-secret.json
+secret.ts
 
 # Node
 /node_modules
