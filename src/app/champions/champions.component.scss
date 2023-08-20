@@ -1,0 +1,48 @@
+@use "./src/palette.scss" as *; 
+
+:host {
+    color: white;
+    font-weight: bold; 
+}
+
+.list-container {
+
+    .list-title {
+       font-size: 4rem;
+       color: $palette-1;
+    }
+
+    .champ-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        min-width: 60dvw;
+        background-color: $palette-2;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        width: fit-content;
+
+        .champ-name {
+            font-size: 1.5rem;
+        }
+
+        .champ-button:hover {
+            background-color: lightseagreen;
+            cursor: pointer;
+        }
+
+        .left-content {
+            min-width: 15rem;
+            border-radius: 0.25rem;
+            background-color: $palette-1;
+            padding: 1rem;
+        }
+
+        .right-content {
+            max-width: 20rem;
+        }
+    }
+}
+

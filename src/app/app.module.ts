@@ -8,13 +8,15 @@ import { BlankComponent } from './blank/blank.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ChampionsComponent } from './champions/champions.component';
+import { ChampDetailsComponent } from './champ-details/champ-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RandomCatComponent,
     BlankComponent,
-    ChampionsComponent
+    ChampionsComponent,
+    ChampDetailsComponent
   ],
   imports: [
     BrowserModule,

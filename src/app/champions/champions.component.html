@@ -1,1 +1,15 @@
-<p>champions works!</p>
+<div *ngIf="champsData.data != null" class=" list-container flex flex-column-center all-width">
+   <div class="list-title">{{"List of champs"}}</div>
+   <div *ngFor="let champ of getChampions()" class="champ-container">
+        <button (click)="gotToChampDetails(champ.id)" class="champ-button left-content">
+            <img [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/champion/' + champ.image.full">
+            <div class="champ-name">{{champ.name}}</div>
+            <div>{{champ.title}}</div>
+        </button>
+        <div class="right-content">
+            <div class="champ-blurb">
+                {{champ.blurb}}
+            </div>
+        </div>
+   </div>
+</div>
