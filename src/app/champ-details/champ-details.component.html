@@ -1,4 +1,7 @@
 <p>{{champId}}</p>
 <p>{{passiveName}}</p>
 
-<img [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/passive/' + champId + '_' + passiveName + '.png'">
+<div *ngFor="let spell of this.champsDetails?.data[champId]?.spells" [ngStyle]="{color: 'red'}">
+    {{spell.description}}
+</div>
+<img [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/passive/' + passiveName">
