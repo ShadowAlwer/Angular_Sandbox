@@ -32,7 +32,7 @@ export class ChampDetailsComponent implements OnInit {
   }
 
   getpassiveName(): any[] {
-    return Object.values(this.champsDetails.data)
+    return this.champsDetails ? Object.values(this.champsDetails.data) : [];
   }
 
   ngOnInit(): void {
