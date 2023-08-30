@@ -3,4 +3,75 @@
     font-size: 3rem;
     font-weight: bold;
     font-family: medium, Italic;
+
+    .champId-box{
+        margin-left: 1rem;
+        font-size: 5rem;
+        text-shadow: 5px 5px 5px #548CB4;
+    }
+
+    .Passive-box{
+        margin-top: 2rem;
+        margin-left: 1rem;
+        display: inline-block;
+    }
+
+    .p1{
+        margin-left: 2rem;
+        display: inline-block;
+    }
+
+    .p2{
+        color: red;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px black;
+        margin-left: 1rem;
+        display: inline-block;
+        font-size: 4rem;
+    }
+
+    .p3{
+        color: black;
+        margin-left: 3rem;
+        max-width: 60rem;
+        outline: solid 0.5rem;
+        outline-color: #EDDC91;
+        background-color: #C4A15B;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        width: fit-content;
+    }
+}
+
+.Spells-box{
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: -1.5rem;
+}
+
+.s1{
+    margin-left: 2rem;
+    margin-top: 4rem;
+    display: inline-block;
+}
+
+.s2{
+    color: red;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-shadow: 2px 2px black;
+    margin-left: 1rem;
+    font-size: 4rem;
+}
+
+.s3{
+    color: black;
+    margin-left: 3rem;
+    max-width: 60rem;
+    outline: solid 0.5rem;
+    outline-color: #EDDC91;
+    background-color: #C4A15B;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: fit-content;
 }
