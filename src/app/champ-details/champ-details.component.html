@@ -1,27 +1,27 @@
 <p class="champId-box">{{champId}}</p>
 
-<div *ngFor="let passive0 of getpassiveName()">
+<div *ngFor="let champsData of getchampsData()">
     <p class="Passive-box">Passive: </p>
 
     <img class="p1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/passive/' + passiveName">
-    <div class="p2">{{passive0?.passive?.name}}</div>
-    <div class="p3">{{passive0?.passive?.description}}</div>
+    <div class="p2">{{champsData?.passive?.name}}</div>
+    <div class="p3">{{champsData?.passive?.description}}</div>
 
     <p class="Spells-box">Spells: </p>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName1">
-    <div class="s2">{{passive0?.spells[0]?.name}}</div>
-    <div class="s3">{{passive0?.spells[0]?.description}}</div>
+    <div class="s2">{{champsData?.spells[0]?.name}}</div>
+    <div class="s3">{{champsData?.spells[0]?.description}}</div>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName2">
-    <div class="s2">{{passive0?.spells[1]?.name}}</div>
-    <div class="s3">{{passive0?.spells[1]?.description}}</div>
+    <div class="s2">{{champsData?.spells[1]?.name}}</div>
+    <div class="s3">{{champsData?.spells[1]?.description}}</div>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName3">
-    <div class="s2">{{passive0?.spells[2]?.name}}</div>
-    <div class="s3">{{passive0?.spells[2]?.description}}</div>
+    <div class="s2">{{champsData?.spells[2]?.name}}</div>
+    <div class="s3">{{champsData?.spells[2]?.description}}</div>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName4">
-    <div class="s2">{{passive0?.spells[3]?.name}}</div>
-    <div class="s3">{{passive0?.spells[3]?.description}}</div>
+    <div class="s2">{{champsData?.spells[3]?.name}}</div>
+    <div class="s3">{{champsData?.spells[3]?.description}}</div>
 </div>

@@ -31,7 +31,7 @@ export class ChampDetailsComponent implements OnInit {
     console.log(this.champId);
   }
 
-  getpassiveName(): any[] {
+  getchampsData(): any[] {
     return this.champsDetails ? Object.values(this.champsDetails.data) : [];
   }
 
