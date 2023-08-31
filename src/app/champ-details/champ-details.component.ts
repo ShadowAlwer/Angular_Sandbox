@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-champ-details',
@@ -27,7 +28,7 @@ export class ChampDetailsComponent implements OnInit {
   ) {
     console.log(this.activatedRoute.snapshot)
     this.champId = this.activatedRoute.snapshot.params['champId'];
-    // this.champId = 'Ashe' 
+
     console.log(this.champId);
   }
 
@@ -45,13 +46,7 @@ export class ChampDetailsComponent implements OnInit {
           this.spellName2 = this.champsDetails.data[this.champId].spells[1].image.full;
           this.spellName3 = this.champsDetails.data[this.champId].spells[2].image.full;
           this.spellName4 = this.champsDetails.data[this.champId].spells[3].image.full;
-                            // this.champsData.data.Ahri.passive.image.full;
-                            // this.champsDetails.data[this.champId].spell[0]
-                            // let index = 2;
-                            // index++
-                            // for (let index = 0; index < 4; index++ ) {
-                            //    this.champsDetails.data[this.champId].spell[index].description
-                            // }
+
           console.log("Retrieved champs data: ",);
           console.dir(this.champsDetails);
       })
@@ -61,3 +56,10 @@ export class ChampDetailsComponent implements OnInit {
 
 
 }
+
+/*
+for (let index = 0; index < 4; index++) {
+  //const element = this.champsDetails.data[this.champId].spell[index].image.full;
+  
+}
+*/

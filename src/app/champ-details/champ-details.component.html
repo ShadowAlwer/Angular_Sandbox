@@ -10,18 +10,18 @@
     <p class="Spells-box">Spells: </p>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName1">
-    <div class="s2">{{champsData?.spells[0]?.name}}</div>
-    <div class="s3">{{champsData?.spells[0]?.description}}</div>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName2">
-    <div class="s2">{{champsData?.spells[1]?.name}}</div>
-    <div class="s3">{{champsData?.spells[1]?.description}}</div>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName3">
-    <div class="s2">{{champsData?.spells[2]?.name}}</div>
-    <div class="s3">{{champsData?.spells[2]?.description}}</div>
 
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName4">
-    <div class="s2">{{champsData?.spells[3]?.name}}</div>
-    <div class="s3">{{champsData?.spells[3]?.description}}</div>
+</div>
+
+<div class="s2" *ngFor="let spellsDescription of this.champsDetails?.data[champId]?.spells">
+    {{spellsDescription.name}}
+</div>
+
+<div class="s3" *ngFor="let spellsDescription of this.champsDetails?.data[champId]?.spells">
+    {{spellsDescription.description}}
 </div>
