@@ -41,6 +41,13 @@ export class ChampDetailsComponent implements OnInit {
 
           console.log("Retrieved champs data: ",);
           console.dir(this.champsDetails);
+
+          // console.log('Spells names: ')
+          // for (let index = 0; index < this.champsDetails.data[this.champId].spells.length; index++) {
+          //   const sellDataObject = this.champsDetails.data[this.champId].spells[index];
+          //   sellDataObject.name
+          //   console.log(sellDataObject.name)
+          // }
       })
     console.log("After request data")
   }
@@ -48,10 +55,3 @@ export class ChampDetailsComponent implements OnInit {
 
 
 }
-
-/*
-for (let index = 0; index < 4; index++) {
-  const element = this.champsDetails.data[this.champId].spell[index].image.full;
-  
-}
-*/

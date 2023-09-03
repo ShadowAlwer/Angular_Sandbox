@@ -10,17 +10,12 @@
     <p class="Spells-box">Spells: </p>
 </div>
 
-<div class="s1" *ngFor="let spellsImg of this.champsDetails?.data[champId]?.spells">
-    <!-- use this -->
-    {{spellsImg.image.full}}
-
-    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell'">
-</div>
-
-<div class="s2" *ngFor="let spellsDescription of this.champsDetails?.data[champId]?.spells">
-    {{spellsDescription.name}}
-</div>
-
-<div class="s3" *ngFor="let spellsDescription of this.champsDetails?.data[champId]?.spells">
-    {{spellsDescription.description}}
+<div 
+    class="flex-column-center"
+    *ngFor="let spellsDataObject of this.champsDetails?.data[champId]?.spells">
+    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/'+ spellsDataObject.image.full">
+    <div>{{'Name: ' + spellsDataObject.name}}</div>
+    <div>{{'Description: ' + spellsDataObject.description}}</div>
+    <div>{{'Cost type: ' + spellsDataObject.costType}}</div>
+    <div>{{'Range burn: ' + spellsDataObject.rangeBurn}}</div>
 </div>
