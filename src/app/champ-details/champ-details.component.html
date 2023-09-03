@@ -14,12 +14,15 @@
     class="flex-column-center"
     *ngFor="let spellsDataObject of this.champsDetails?.data[champId]?.spells">
     <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/'+ spellsDataObject.image.full">
-    <div>{{'Name: ' + spellsDataObject.name}}</div>
-    <div>{{'Description: ' + spellsDataObject.description}}</div>
-    <div>{{'Cost type: ' + spellsDataObject.costType}}</div>
-    <div>{{'Range burn: ' + spellsDataObject.rangeBurn}}</div>
+    <div class="s2">{{'Name: ' + spellsDataObject.name}}</div>
+    <div class="s3">{{'Description: ' + spellsDataObject.description}}</div>
+</div>
+
+<div 
+    class="flex-column-center"
+    *ngFor="let skinsDataObject of this.champsDetails?.data[champId]?.skins">
+    <div class="s2">{{'Name: ' + skinsDataObject.name}}</div>
+    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/img/champion/splash/'+ champId + '_' + skinsDataObject.num + '.jpg'">
 </div>
 
 <!-- http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg -->
-<!-- http://ddragon.leagueoflegends.com/cdn/img/champion/splash/ -->
-<!-- skin name -->

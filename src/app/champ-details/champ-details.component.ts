@@ -41,13 +41,12 @@ export class ChampDetailsComponent implements OnInit {
 
           console.log("Retrieved champs data: ",);
           console.dir(this.champsDetails);
-
-          // console.log('Spells names: ')
-          // for (let index = 0; index < this.champsDetails.data[this.champId].spells.length; index++) {
-          //   const sellDataObject = this.champsDetails.data[this.champId].spells[index];
-          //   sellDataObject.name
-          //   console.log(sellDataObject.name)
-          // }
+/*
+           for (let index = 0; index < this.champsDetails.data[this.champId].spells.length; index++) {
+             const spellsDataObject = this.champsDetails.data[this.champId].spells[index];
+             console.log(spellsDataObject.name)
+          }
+*/
       })
     console.log("After request data")
   }
