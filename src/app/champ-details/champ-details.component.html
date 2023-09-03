@@ -8,14 +8,12 @@
     <div class="p3">{{champsData?.passive?.description}}</div>
 
     <p class="Spells-box">Spells: </p>
+</div>
 
-    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName1">
+<div class="s1" *ngFor="let spellsImg of this.champsDetails?.data[champId]?.spells">
+    {{spellsImg.image.full}}
 
-    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName2">
-
-    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName3">
-
-    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell/' + spellName4">
+    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell' + spellsName + '.png'">
 </div>
 
 <div class="s2" *ngFor="let spellsDescription of this.champsDetails?.data[champId]?.spells">
