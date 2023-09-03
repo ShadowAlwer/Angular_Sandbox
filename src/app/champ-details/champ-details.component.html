@@ -11,9 +11,10 @@
 </div>
 
 <div class="s1" *ngFor="let spellsImg of this.champsDetails?.data[champId]?.spells">
+    <!-- use this -->
     {{spellsImg.image.full}}
 
-    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell' + spellsName + '.png'">
+    <img class="s1" [src]="'http://ddragon.leagueoflegends.com/cdn/13.16.1/img/spell' +  + '.png'">
 </div>
 
 <div class="s2" *ngFor="let spellsDescription of this.champsDetails?.data[champId]?.spells">

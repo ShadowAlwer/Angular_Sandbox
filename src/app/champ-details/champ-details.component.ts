@@ -17,7 +17,6 @@ export class ChampDetailsComponent implements OnInit {
   public champsDetails: any = null;
   public champId: string = "";
   public passiveName: string = "";
-  public spellsName: string = "";
 
   constructor(
     private http: HttpClient,
@@ -39,7 +38,6 @@ export class ChampDetailsComponent implements OnInit {
       .subscribe((details: any) => {
           this.champsDetails = details;
           this.passiveName = this.champsDetails.data[this.champId].passive.image.full;
-          this.spellsName = this.champsDetails.data[this.champId].spells;
 
           console.log("Retrieved champs data: ",);
           console.dir(this.champsDetails);
