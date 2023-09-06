@@ -4,6 +4,7 @@ import { RandomCatComponent } from './random-cat/random-cat.component';
 import { BlankComponent } from './blank/blank.component';
 import { ChampionsComponent } from './champions/champions.component';
 import { ChampDetailsComponent } from './champ-details/champ-details.component';
+import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'champs/:champId',
     component: ChampDetailsComponent
+  },
+  {
+    path: 'kalkulator',
+    component: KalkulatorComponent
   }
 ];
 
