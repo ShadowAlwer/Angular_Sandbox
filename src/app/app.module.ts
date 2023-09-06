@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ChampionsComponent } from './champions/champions.component';
 import { ChampDetailsComponent } from './champ-details/champ-details.component';
+import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChampDetailsComponent } from './champ-details/champ-details.component';
     RandomCatComponent,
     BlankComponent,
     ChampionsComponent,
-    ChampDetailsComponent
+    ChampDetailsComponent,
+    KalkulatorComponent
   ],
   imports: [
     BrowserModule,
