@@ -1,17 +1,50 @@
-.button{
-    background-color: #333333;
-    border-radius: 5px;
-    color: #00FF00;
-    padding: 16px;
-    text-align: center;
-    font-size: 32px;
-    margin-left: 50px;
-    margin-top: 50px;
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.p{
-    color: #00FF00;
-    font-size: 32px;
-    margin-left: 250px;
-    margin-top: -65px;
+.kalkulator{
+    background: #333333;
+    padding: 20px;
+    border-radius: 10px;
+}
+.kalkulator form input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px #00FF00, 5px 5px 15px #650000;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+.kalkulator form input:hover{
+    background-color: #ff7f00;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    color: white;
+    box-shadow: none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+form input.operator{
+    color: #fcc200;
 }
