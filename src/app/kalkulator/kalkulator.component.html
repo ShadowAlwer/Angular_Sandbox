@@ -3,8 +3,7 @@
         <form>
             <div class="display">
                 <input type="text" name="display" 
-                [ngModel]="displayValue" 
-                (ngModelChange)="onChange($event)">
+                [(ngModel)]="displayValue">
             </div>
             <div class="operator">
                 <button (click)="onClearAll()">{{'AC'}}</button>
