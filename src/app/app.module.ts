@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ChampionsComponent } from './champions/champions.component';
 import { ChampDetailsComponent } from './champ-details/champ-details.component';
 import { KalkulatorComponent } from './kalkulator/kalkulator.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { KalkulatorComponent } from './kalkulator/kalkulator.component';
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [
   ],
