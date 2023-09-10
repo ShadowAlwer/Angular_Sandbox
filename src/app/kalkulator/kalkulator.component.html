@@ -1,38 +1,42 @@
 <div class="container">
     <div class="kalkulator">
-        <form>
-            <div class="display">
-                <input type="text" name="display" [(ngModel)]="displayValue">
+            <div>
+                <button class="operator" (click)="previousValue()">{{'↻'}}</button>
             </div>
-            <div class="operator">
-                <button (click)="onClearAll()">{{'AC'}}</button>
-                <button (click)="removeLastInput()">{{'DE'}}</button>
-                <button (click)="addToDisplay('.')">{{'.'}}</button>
-                <button (click)="addToDisplay('/')">{{'/'}}</button>
+            <div class="history">
+                <input disabled type="text" name="display" [(ngModel)]="displayPreviousValue">
+            </div>
+            <div class="display">
+                <input disabled type="text" name="display" [(ngModel)]="displayValue">
+            </div>
+            <div>
+                <button class="operator" (click)="onClearAll()">{{'AC'}}</button>
+                <button class="operator" (click)="removeLastInput()">{{'DE'}}</button>
+                <button class="operator" (click)="addToDisplay('.')">{{'.'}}</button>
+                <button class="operator" (click)="addToDisplay('/')">{{'/'}}</button>
             </div>
             <div>
                 <button (click)="addToDisplay('7')">{{'7'}}</button>
                 <button (click)="addToDisplay('8')">{{'8'}}</button>
                 <button (click)="addToDisplay('9')">{{'9'}}</button>
-                <button (click)="addToDisplay('.')">{{'.'}}</button>
+                <button class="operator" (click)="addToDisplay('.')">{{'.'}}</button>
             </div>
             <div>
                 <button (click)="addToDisplay('4')">{{'4'}}</button>
                 <button (click)="addToDisplay('5')">{{'5'}}</button>
                 <button (click)="addToDisplay('6')">{{'6'}}</button>
-                <button (click)="addToDisplay('-')">{{'-'}}</button>
+                <button class="operator" (click)="addToDisplay('-')">{{'-'}}</button>
             </div>
             <div>
                 <button (click)="addToDisplay('1')">{{'1'}}</button>
                 <button (click)="addToDisplay('2')">{{'2'}}</button>
                 <button (click)="addToDisplay('3')">{{'3'}}</button>
-                <button (click)="addToDisplay('+')">{{'+'}}</button>
+                <button class="operator" (click)="addToDisplay('+')">{{'+'}}</button>
             </div>
             <div>
                 <button (click)="addToDisplay('0')">{{'0'}}</button>
                 <button (click)="addToDisplay('00')">{{'00'}}</button>
-                <button (click)="evaluateDisplay()">{{'='}}</button>
+                <button class="equal" (click)="evaluateDisplay()">{{'='}}</button>
             </div>
-        </form>
     </div>
 </div>

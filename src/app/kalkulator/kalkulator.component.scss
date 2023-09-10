@@ -11,8 +11,7 @@
     padding: 20px;
     border-radius: 10px;
 }
-.kalkulator form input,
-    button {
+.kalkulator input, button{
     border: 0;
     outline: 0;
     width: 60px;
@@ -24,17 +23,18 @@
     color: white;
     cursor: pointer;
     margin: 10px;
+    text-align: center;
 }
-.kalkulator form input:hover{
+.kalkulator input:hover{
     background-color: #ff7f00;
 }
 
-form .display{
+.display{
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
 }
-form .display input{
+.display input{
     text-align: right;
     flex: 1;
     font-size: 45px;
@@ -42,10 +42,23 @@ form .display input{
     box-shadow: none;
 }
 
-form input.equal{
-    width: 145px;
+.equal{
+    width: 155px;
 }
 
-form input.operator{
+.operator{
     color: #fcc200;
+}
+
+.history{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.history input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    color: #fcc200;
+    box-shadow: none;
 }

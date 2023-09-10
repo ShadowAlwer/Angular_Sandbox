@@ -7,19 +7,17 @@ import { Component } from '@angular/core';
 })
 export class KalkulatorComponent {
 
-  public displayValue: string = ''; 
+  public displayValue: string = '';
+  public displayPreviousValue: string = '';
 
   onClearAll() {
-    console.log('Click');
     this.displayValue = '';
   }
 
   removeLastInput() {
     console.log('Click');
     this.displayValue = this.displayValue
-      .split('')
-      .splice(this.displayValue.length - 1, 1)
-      .join();
+      .slice(0, -1)
   }
 
   addToDisplay(symbol: string) {
@@ -28,8 +26,10 @@ export class KalkulatorComponent {
 
   evaluateDisplay() {
     this.displayValue = eval(this.displayValue);
+  }
 
-
+  previousValue(){
+    this.displayPreviousValue = this.displayValue;
   }
 
 }
