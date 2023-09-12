@@ -1,13 +1,13 @@
 <div class="container">
     <div class="kalkulator">
-            <div>
+            <!-- <div>
                 <button class="operator" (click)="previousValue()">{{'↻'}}</button>
+            </div> -->
+            <div class="display">
+                <input disabled type="text" name="display" [(ngModel)]="displayValue">
             </div>
             <div class="history">
                 <input disabled type="text" name="display" [(ngModel)]="displayPreviousValue">
-            </div>
-            <div class="display">
-                <input disabled type="text" name="display" [(ngModel)]="displayValue">
             </div>
             <div>
                 <button class="operator" (click)="onClearAll()">{{'AC'}}</button>
@@ -19,7 +19,7 @@
                 <button (click)="addToDisplay('7')">{{'7'}}</button>
                 <button (click)="addToDisplay('8')">{{'8'}}</button>
                 <button (click)="addToDisplay('9')">{{'9'}}</button>
-                <button class="operator" (click)="addToDisplay('.')">{{'.'}}</button>
+                <button class="operator" (click)="addToDisplay('*')">{{'*'}}</button>
             </div>
             <div>
                 <button (click)="addToDisplay('4')">{{'4'}}</button>
@@ -36,7 +36,7 @@
             <div>
                 <button (click)="addToDisplay('0')">{{'0'}}</button>
                 <button (click)="addToDisplay('00')">{{'00'}}</button>
-                <button class="equal" (click)="evaluateDisplay()">{{'='}}</button>
+                <button class="equal" (click)="previousValue()">{{'='}}</button>
             </div>
     </div>
 </div>

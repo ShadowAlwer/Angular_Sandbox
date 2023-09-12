@@ -24,12 +24,12 @@ export class KalkulatorComponent {
     this.displayValue += symbol;
   }
 
-  evaluateDisplay() {
-    this.displayValue = eval(this.displayValue);
-  }
+  // evaluateDisplay() {
+  //   this.displayValue = eval(this.displayValue);
+  // }
 
   previousValue(){
-    this.displayPreviousValue = this.displayValue;
+    this.displayPreviousValue = eval(this.displayValue);
   }
 
 }
