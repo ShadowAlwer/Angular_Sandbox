@@ -5,6 +5,7 @@ import { BlankComponent } from './blank/blank.component';
 import { ChampionsComponent } from './champions/champions.component';
 import { ChampDetailsComponent } from './champ-details/champ-details.component';
 import { KalkulatorComponent } from './kalkulator/kalkulator.component';
+import { CarsComponent } from './cars/cars.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'kalkulator',
     component: KalkulatorComponent
+  },
+  {
+    path: 'cars',
+    component: CarsComponent
   }
 ];
 

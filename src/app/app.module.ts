@@ -11,6 +11,7 @@ import { ChampionsComponent } from './champions/champions.component';
 import { ChampDetailsComponent } from './champ-details/champ-details.component';
 import { KalkulatorComponent } from './kalkulator/kalkulator.component';
 import { FormsModule } from '@angular/forms';
+import { CarsComponent } from './cars/cars.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     BlankComponent,
     ChampionsComponent,
     ChampDetailsComponent,
-    KalkulatorComponent
+    KalkulatorComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,
