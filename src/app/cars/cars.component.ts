@@ -7,16 +7,46 @@ import { Component } from '@angular/core';
 })
 export class CarsComponent {
 
-  displayValue = '';
+  public enterOwner: string = '';
+  public enterName: string = '';
+  public enterYear: string = '';
+  public enterModel: string = '';
+  public enterColor: string = '';
 
-  getValue(val: string){
+  displayOwner = '';
+  displayName = '';
+  displayYear = '';
+  displayModel = '';
+  displayColor = '';
+
+  i1 = [this.enterOwner];
+  i2 = [this.enterName];
+  i3 = [this.enterYear];
+  i4 = [this.enterModel];
+  i5 = [this.enterColor];
+
+  getOwner(val: string){
     console.warn(val)
-    this.displayValue = val;
+    this.displayOwner = val;
   }
 
-  public enterValue: string = '';
+  getName(val: string){
+    console.warn(val)
+    this.displayName = val;
+  }
 
-  headers = ["Name and Surname", "Name", "Year", "Car Model", "Color"];
+  getYear(val: string){
+    console.warn(val)
+    this.displayYear = val;
+  }
 
-  displays = [this.enterValue];
+  getModel(val: string){
+    console.warn(val)
+    this.displayModel = val;
+  }
+
+  getColor(val: string){
+    console.warn(val)
+    this.displayColor = val;
+  }
 }

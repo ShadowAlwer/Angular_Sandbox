@@ -1,13 +1,38 @@
 <h1 class="h1">CARS LIST</h1>
-<hr>
+<hr class="hr">
 
-<table>
-    <tr>
-        <th class="headers" *ngFor="let column of headers">
-            <input #box type="text" placeholder="Enter name" name="display" [(ngModel)]="displays" *ngFor="let column of displays">
-            <!-- <button class="button" (click)="getValue(box.value)">Click</button> -->
-            <p> Box value is: {{ displayValue }} </p>
-            {{column}}
-        </th> 
-    </tr>
-</table>
+<div>
+    <h2 class="h2">Name and Surname</h2>
+    <input #box1 class="input" type="text" placeholder="Enter name and surname" name="display" [(ngModel)]=" i1">
+    <button class="button" (click)="getOwner(box1.value)">Click</button>
+    <p class="p1"> Box value is: {{ displayOwner }} </p>
+</div>
+<hr class="hr">
+<div>
+    <h2 class="h2">Name</h2>
+    <input #box2 class="input" type="text" placeholder="Enter name of a car" name="display" [(ngModel)]="i2">
+    <button class="button" (click)="getName(box2.value)">Click</button>
+    <p class="p1"> Box value is: {{ displayName }} </p>
+</div>
+<hr class="hr">
+<div >
+    <h2 class="h2">Year</h2>
+    <input #box3 class="input" type="text" placeholder="Enter year of production" name="display" [(ngModel)]="i3">
+    <button class="button" (click)="getYear(box3.value)">Click</button>
+    <p class="p1"> Box value is: {{ displayYear }} </p>
+</div>
+<hr class="hr">
+<div>
+    <h2 class="h2">Car Model</h2>
+    <input #box4 class="input" type="text" placeholder="Enter car model name" name="display" [(ngModel)]="i4">
+    <button class="button" (click)="getModel(box4.value)">Click</button>
+    <p class="p1"> Box value is: {{ displayModel }} </p>
+</div>
+<hr class="hr">
+<div>
+    <h2 class="h2">Color</h2>
+    <input #box5 class="input" type="text" placeholder="Enter color of a car" name="display" [(ngModel)]="i5">
+    <button class="button" (click)="getColor(box5.value)">Click</button>
+    <p class="p1"> Box value is: {{ displayColor }} </p>
+</div>
+<hr class="hr">
