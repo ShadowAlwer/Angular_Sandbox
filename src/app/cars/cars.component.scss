@@ -61,3 +61,18 @@
     margin-left: 50px;
     list-style-type: square
 }
+
+.cars-container {
+    gap: 5rem;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    
+    .car {
+        border: 3px solid palevioletred;
+        padding: 1rem;
+        border-radius: 1rem;
+    } 
+}

@@ -10,8 +10,15 @@
     <button class="button" (click)="submit">Submit</button>
 </div>
 <hr class="hr">
-
-
+<div class="cars-container">
+    <div *ngFor="let car of cars" class=" car flex-column-center">
+        <span>{{car.owner}}</span>
+        <span>{{car.modelName}}</span>
+        <span>{{car.mark}}</span>
+        <span>{{car.yearOfProduction}}</span>
+        <span>{{car.color}}</span>
+    </div>
+</div>
 
 <hr class="hr">
 
