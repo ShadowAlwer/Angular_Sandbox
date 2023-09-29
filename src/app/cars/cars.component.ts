@@ -21,7 +21,7 @@ export class CarsComponent {
       owner: 'Alex',
       yearOfProduction: '2000'
     },
-        {
+    {
       modelName: 'Agyou',
       mark: 'Toyota',
       color: 'blue',
@@ -31,7 +31,15 @@ export class CarsComponent {
   ]
 
   submit() {
-    // TODO;
+    const newCar = {
+      modelName: this.modelName,
+      mark: this.mark,
+      color: this.color,
+      owner: this.owner,
+      yearOfProduction: this.yearOfProduction,
+    }
+
+    this.cars.push(newCar);
   }
 }
 
