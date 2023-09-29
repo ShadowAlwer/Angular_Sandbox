@@ -43,10 +43,9 @@ app-root {
 }
 
 .flex {
-    
-    gap: 1rem;
 
     &-row-center {
+        gap: 1rem;
         align-items: center;
         display: flex;
         flex-direction: row;
@@ -54,6 +53,7 @@ app-root {
     }
 
     &-column-center {
+        gap: 1rem;
         align-items: center;
         display: flex;
         flex-direction: column;
