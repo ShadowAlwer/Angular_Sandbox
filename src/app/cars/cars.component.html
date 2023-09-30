@@ -1,8 +1,7 @@
 <h1 class="h1">CARS LIST</h1>
 <hr class="hr">
 
-<hr class="hr">
-<div class="flex-row-center">
+<div class="flex-column-center">
     <input #box1 class="input" type="text" placeholder="Enter name and surname" name="display" [(ngModel)]="enterOwner">
     <input #box2 class="input" type="text" placeholder="Enter name of a car" name="display" [(ngModel)]="enterName">
     <input #box3 class="input" type="text" placeholder="Enter year of production" name="display" [(ngModel)]="enterYear">
@@ -10,16 +9,15 @@
     <input #box5 class="input" type="text" placeholder="Enter color of a car" name="display" [(ngModel)]="enterColor">
     <button class="button" (click)="submit()">Submit</button>
 </div>
-<hr class="hr">
 
 <hr class="hr2">
-<div>
-    <div *ngFor="let car of cars">
-        <span>{{car.enterOwner}}</span>
-        <span>{{car.enterName}}</span>
-        <span>{{car.enterYear}}</span>
-        <span>{{car.enterModel}}</span>
-        <span>{{enterColor}}</span>
+<div class="flex-column">
+    <div class="p1" *ngFor="let car of cars">
+        <span>{{car.Owner}}</span><p> </p>
+        <span>{{car.Name}}</span><p> </p>
+        <span>{{car.Year}}</span><p> </p>
+        <span>{{car.Model}}</span><p> </p>
+        <span>{{car.Color}}</span>
     </div>
 </div>
 <hr class="hr2">

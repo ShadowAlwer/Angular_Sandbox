@@ -42,3 +42,11 @@ export class CarsComponent {
     this.cars.push(newCar);
   }
 }
+
+export interface Car {
+  Owner: string,
+  Name: string,
+  Year: string,
+  Model: string,
+  Color: string,
+}
